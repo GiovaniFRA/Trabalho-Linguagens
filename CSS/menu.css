@@ -1,0 +1,45 @@
+
+*{ 
+     padding:0; margin:0;
+}
+input{display:none;}
+
+/* div para receber o clicque (se usasse apenas o span o clique ficaria limitado) */
+    div.icone{ width:30px; height:30px; margin:0; z-index:1; position:absolute;}
+/* icone do menu */
+    label span{background-color:black; width:20px; height:5px; display: block;position:absolute;}
+    label span:nth-child(1){margin-top:0px;}
+    label span:nth-child(2){margin-top:8px;}
+    label span:nth-child(3){margin-top:16px;} 
+    input[type="checkbox"]:checked~div.menupart{left:0px;}
+    .menunome{
+        margin-left:25px;
+        background:none;
+    }
+/* estilização da lista */
+    div.menupart{
+        opacity:0.9;
+        position: absolute;
+        top:0;
+        width:250px;
+        height:89%;
+        position:absolute;
+        background-color:rgb(47, 49, 50);
+        left:-100%;
+        list-style:none;
+    } 
+    ul.menu{
+        display:block;
+        margin-top:50px;
+        
+    }
+    a{
+        text-decoration: none; 
+        display:block;
+        height:49px;
+        color:white;
+        margin-left:10px;
+    }
+    li:hover{background-color:black;}
+/* menu em totalidade */
+nav.menu{margin-left:10px; margin-top:10px;opacity:0.9;}
