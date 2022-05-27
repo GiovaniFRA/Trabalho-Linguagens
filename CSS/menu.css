@@ -22,7 +22,7 @@ input{display:none;}
         position: absolute;
         top:0;
         width:250px;
-        height:89%;
+        height:calc();
         position:absolute;
         background-color:rgb(47, 49, 50);
         left:-100%;
@@ -42,4 +42,4 @@ input{display:none;}
     }
     li:hover{background-color:black;}
 /* menu em totalidade */
-nav.menu{margin-left:10px; margin-top:10px;opacity:0.9;}
+nav.menu{margin-left:10px; margin-top:10px;}
