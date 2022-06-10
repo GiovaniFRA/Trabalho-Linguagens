@@ -84,11 +84,29 @@ body{width: 100%; height: 100%; }
     top:50px;
     height:130px;
     left:50px;
-    width: 65px;
+    width: 75px;
     position: absolute;
     display: unset;
 }
 #menuchec[type="checkbox"]:checked ~ #selector{
     display: unset;
 }
+#bullet{
+    display: none;
+}
+#menuchec[type="checkbox"]:checked ~ #bullet{
+    width:15px;
+    height:7px;
+    left:130px;
+    top:90px;
+    display: block;
+    background-color: gold;
+    position: absolute;
+    animation: bullet 0.5s infinite ease-in-out;
+}
 
+@keyframes bullet{
+    0%{ left:130px; }
+    
+    100%{left:85%;}
+}
