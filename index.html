@@ -4,36 +4,48 @@
     <head>
         <title>Primeira página</title>
         <meta charset="utf-8">
-        <link rel="stylesheet" href="CSS/menu1.css">
-        <link rel="stylesheet" href="CSS/menu2.css">
-        <link rel="stylesheet" href="CSS/background.css">
-        <link rel="stylesheet" href="CSS/geral.css">
+       
+        <link rel="stylesheet" type="text/css" href="CSS/menuicon.css">
+        <link rel="stylesheet" type="text/css" href="CSS/background.css">
+        <link rel="stylesheet" type="text/css" href="CSS/geral.css">
+        <link rel="stylesheet" type="text/css" href="CSS/JanelaDeEscolha.css">
 
     </head>
 
     <body>
        <header>
-           <input type="checkbox" id="chec">
+           
+           <h2 >HOME</h2 >
+       </header id="hd"><hr class="hd" >
+
+       <input type="checkbox" id="chec">
            <label for="chec">
                <div class="icon"><span></span><span></span><span></span></div>
             </label>
-           <h2 >HOME</h2 >
 
-       </header><hr class="hd">
+        <input type="checkbox" id="menuchec">
+        <label for="menuchec" id="button"> <p>Carregar menu</p> </label>
 
-          <nav class="menu">
-                        <ul class="menu">
-                            <li class="menu"><a href="index.html"><img src="Imagens/hitoria.jpg" class="im1" alt="A história da IA" title="A história da IA"></a></li>
-                            <li class="menu"><a href="pag2.html"><img src="Imagens/exter.jpg"class="im2" alt="IA no cinema" title="IA no cinema"></a></li >
-                            <li class="menu"><a href="pag2.html"><img src="Imagens/oquee.jpg"class="im3" alt="O que é IA?" title="O que é IA?"></a></li >
-                            <li class="menu"><a href="pag2.html"><img src="Imagens/ia.jpg"class="im4" alt="Uso de IA nos dias de hoje" title="Uso de IA nos dias de hoje"></a></li >
-                        </u2>
-          </nav> 
-       
-       <footer>
+
+        <div id="bkmenu"></div>
+                
+         <img src="Imagens/cowboy.png" id="cowboy">
+         
+
+        <nav id="selector">
+         <div id="op1"></div>
+         <div id="op2"></div>
+         <div id="op3"></div>
+         <div id="op4"></div>
+        </nav>
+        
+
+         <footer>
             <p class="f">@ maio 2022</p> <p class="f">Brasil</p>
          </footer>
+     
 
+         <script src="menudeescolha.js"></script>
     </body>
 
 </html>

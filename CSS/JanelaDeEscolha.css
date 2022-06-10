@@ -1,0 +1,94 @@
+body{width: 100%; height: 100%; }
+#cowboy{
+    display: none;
+}
+#selector{
+    display: none;
+}
+#button{
+    cursor: pointer;
+    display: flex;
+    background-color: white;
+    border:solid black;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 50px;
+    position: absolute;
+    left: 44.50%;
+    top:40%;
+}
+#button:hover{
+    background-color: rgb(208, 199, 199);
+}
+
+#op1{
+    background-color: red;
+     width: 100px; 
+     height: 95px;
+     display: block;
+     position:relative;
+     margin-left: 80%;
+     top:20px;
+    
+}
+
+ #op2{
+    margin-top:45px;
+    background-color: red;
+     width: 100px; 
+     height: 95px;
+     display: block;
+     position:relative;
+     margin-left: 80%;
+}
+
+#op3{
+    
+    margin-top: 25px;
+    background-color: red;
+     width: 100px; 
+     height: 95px;
+     display: block;
+     position:relative;
+     margin-left: 80%;
+}
+
+#op4{
+    margin-top: 25px;
+    background-color: red;
+     width: 100px; 
+     height: 95px;
+     display: block;
+     position:relative;
+     margin-left: 80%;
+} 
+
+ #menuchec[type="checkbox"]:checked ~ #bkmenu{
+    width: 100%;
+    height: 100%;
+    background-color: aqua;
+    position: absolute; 
+    top: 0;
+    
+    
+}
+#menuchec[type="checkbox"]:checked ~ #button{
+  display: none;
+}
+#menuchec[type="checkbox"]:checked ~ footer{
+    top:100%;
+}
+
+#menuchec[type="checkbox"]:checked ~ #cowboy{
+    top:50px;
+    height:130px;
+    left:50px;
+    width: 65px;
+    position: absolute;
+    display: unset;
+}
+#menuchec[type="checkbox"]:checked ~ #selector{
+    display: unset;
+}
+
