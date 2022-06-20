@@ -5,6 +5,8 @@ body{width: 100%; height: 100%; }
 #selector{
     display: none;
 }
+
+
 #button{
     cursor: pointer;
     display: flex;
@@ -22,74 +24,106 @@ body{width: 100%; height: 100%; }
     background-color: rgb(208, 199, 199);
 }
 
+
+#button2{
+    cursor: pointer;
+    display: flex;
+    background-color: white;
+    border:solid black;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    height: 30px;
+    position: absolute;
+    left: 93.50%;
+    top:94%;
+    z-index: 1;
+}
+#button2:hover{
+    background-color: rgb(208, 199, 199);
+}
+
 #op1{
     background-color: red;
-     width: 100px; 
-     height: 95px;
+     width: 70px; 
+     height: 45px;
      display: block;
-     position:relative;
-     margin-left: 80%;
-     top:20px;
-    
+     position:absolute;
+     top: 20px;;   
 }
 
- #op2{
-    margin-top:45px;
+#op2{
     background-color: red;
-     width: 100px; 
-     height: 95px;
+     width: 70px; 
+     height: 45px;
      display: block;
-     position:relative;
-     margin-left: 80%;
+     position:absolute;
+     top: 75px;;   
 }
 
-#op3{
-    
-    margin-top: 25px;
+ #op3{
     background-color: red;
-     width: 100px; 
-     height: 95px;
+     width: 70px; 
+     height: 45px;
      display: block;
-     position:relative;
-     margin-left: 80%;
+     position:absolute;
+     top: 139px;
 }
 
 #op4{
-    margin-top: 25px;
     background-color: red;
-     width: 100px; 
-     height: 95px;
+     width: 70px; 
+     height: 45px;
      display: block;
-     position:relative;
-     margin-left: 80%;
+     position:absolute;
+     top: 201px;
+}
+
+#op5{
+    background-color: red;
+     width: 70px; 
+     height: 45px;
+     display: block;
+     position:absolute;
+     top:260px;  
 } 
 
  #menuchec[type="checkbox"]:checked ~ #bkmenu{
-    width: 100%;
+    width: 100vw;
     height: 100%;
-    background-color: aqua;
+    background-image: url("../Imagens/cenario.png");
+    background-repeat: no-repeat;
+    background-size: cover;
     position: absolute; 
-    top: 0;
-    
-    
+    top: 0; 
 }
+
+
 #menuchec[type="checkbox"]:checked ~ #button{
   display: none;
 }
+#menuchec[type="checkbox"]:checked ~ #button2{
+    display: none;
+}
+
+
 #menuchec[type="checkbox"]:checked ~ footer{
     top:100%;
 }
 
 #menuchec[type="checkbox"]:checked ~ #cowboy{
-    top:50px;
+    top:255px;
     height:130px;
-    left:50px;
+    left:150px;
     width: 75px;
     position: absolute;
     display: unset;
 }
 #menuchec[type="checkbox"]:checked ~ #selector{
     display: unset;
+    position: absolute;
+    top:270px;
+    left: 20%;
 }
 #bullet{
     display: none;
@@ -97,16 +131,16 @@ body{width: 100%; height: 100%; }
 #menuchec[type="checkbox"]:checked ~ #bullet{
     width:15px;
     height:7px;
-    left:130px;
-    top:90px;
+    left:230px;
     display: block;
     background-color: gold;
     position: absolute;
-    animation: bullet 0.5s infinite ease-in-out;
+    animation: bullet 1.500s   ;
 }
 
+
 @keyframes bullet{
-    0%{ left:130px; }
+    0%{ left:230px; }
     
-    100%{left:85%;}
+    100%{left:80%;}
 }

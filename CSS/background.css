@@ -1,6 +1,7 @@
 body{
     background:linear-gradient(45deg,#262827,#1c1e1e,#000000);
-    width:100vh;height:100vh; 
+    width:100vh;
+    height:100vh; 
     animation: colors infinite 15s ease; background-size: 300% 300%; 
 }
 @keyframes colors{
