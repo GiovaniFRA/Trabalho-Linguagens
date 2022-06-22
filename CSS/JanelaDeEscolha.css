@@ -44,49 +44,105 @@ body{width: 100%; height: 100%; }
 }
 
 #op1{
-    background-color: red;
+     z-index:1;
+     background-color: red;
      width: 70px; 
      height: 45px;
      display: block;
      position:absolute;
-     top: 20px;;   
+     top: 10px;;
+     opacity:0.8; 
+     animation: olo infinite 1s;     
 }
 
 #op2{
+    z-index:1;
     background-color: red;
      width: 70px; 
      height: 45px;
      display: block;
      position:absolute;
-     top: 75px;;   
+     top: 75px;  
+     opacity:0.8;
+     animation: olo infinite 1s;    
 }
 
  #op3{
+    z-index:1;
     background-color: red;
      width: 70px; 
      height: 45px;
      display: block;
      position:absolute;
-     top: 139px;
+     top: 138px;
+     opacity:0.5;  
+     animation: olo infinite 1s; 
 }
 
 #op4{
+    z-index:1;
     background-color: red;
      width: 70px; 
      height: 45px;
      display: block;
      position:absolute;
-     top: 201px;
+     top: 195px;
+     opacity:0.8;  
+     animation: olo infinite 1s; 
 }
 
 #op5{
+    z-index:1;
     background-color: red;
      width: 70px; 
      height: 45px;
      display: block;
      position:absolute;
      top:260px;  
+     opacity:0.8;  
+     animation: olo infinite 1s; 
 } 
+@keyframes olo{
+    0%{
+        opacity:0.6;
+    }
+}
+#drone1{
+    width:90px;
+    height: 90px;
+    position: absolute;
+    left:-10%;
+    top:-34px;
+}
+
+#drone2{
+    width:90px;
+    height: 90px;
+    position: absolute;
+    left:-10%;
+    top:33px;
+}
+#drone3{
+    width:90px;
+    height: 90px;
+    position: absolute;
+    left:-10%;
+    top:97px;
+}
+#drone4{
+    width:90px;
+    height: 90px;
+    position: absolute;
+    left:-10%;
+    top:152px;
+}
+#drone5{
+    width:90px;
+    height: 90px;
+    position: absolute;
+    left:-10%;
+    top:218px;
+}
 
  #menuchec[type="checkbox"]:checked ~ #bkmenu{
     width: 100vw;
@@ -112,7 +168,7 @@ body{width: 100%; height: 100%; }
 }
 
 #menuchec[type="checkbox"]:checked ~ #cowboy{
-    top:255px;
+    top:40%;
     height:130px;
     left:150px;
     width: 75px;
@@ -122,8 +178,10 @@ body{width: 100%; height: 100%; }
 #menuchec[type="checkbox"]:checked ~ #selector{
     display: unset;
     position: absolute;
-    top:270px;
-    left: 20%;
+    top:48%;
+    left: 80%;
+    width: 500px;
+    height: 500px;
 }
 #bullet{
     display: none;
@@ -135,12 +193,15 @@ body{width: 100%; height: 100%; }
     display: block;
     background-color: gold;
     position: absolute;
-    animation: bullet 1.500s   ;
+    animation: bullet 1.500s ease;
 }
+
+
 
 
 @keyframes bullet{
     0%{ left:230px; }
-    
-    100%{left:80%;}
+    5%{width:40px;}
+    25%{width:60px;}
+    100%{left:80%; width: 70px;}
 }
