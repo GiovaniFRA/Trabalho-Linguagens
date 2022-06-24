@@ -46,11 +46,12 @@ body{width: 100%; height: 100%; }
 #op1{
      z-index:1;
      background-color: red;
-     width: 70px; 
+     width: 150px;
+     border:3px solid black; 
      height: 45px;
      display: block;
      position:absolute;
-     top: 10px;;
+     top: 10px;
      opacity:0.8; 
      animation: olo infinite 1s;     
 }
@@ -58,7 +59,8 @@ body{width: 100%; height: 100%; }
 #op2{
     z-index:1;
     background-color: red;
-     width: 70px; 
+     width: 150px;
+     border:3px solid black; 
      height: 45px;
      display: block;
      position:absolute;
@@ -70,7 +72,8 @@ body{width: 100%; height: 100%; }
  #op3{
     z-index:1;
     background-color: red;
-     width: 70px; 
+     width: 150px;
+     border:3px solid black; 
      height: 45px;
      display: block;
      position:absolute;
@@ -82,7 +85,8 @@ body{width: 100%; height: 100%; }
 #op4{
     z-index:1;
     background-color: red;
-     width: 70px; 
+     width: 150px;
+     border:3px solid black; 
      height: 45px;
      display: block;
      position:absolute;
@@ -94,7 +98,8 @@ body{width: 100%; height: 100%; }
 #op5{
     z-index:1;
     background-color: red;
-     width: 70px; 
+     width: 150px;
+     border:3px solid black; 
      height: 45px;
      display: block;
      position:absolute;
@@ -145,13 +150,14 @@ body{width: 100%; height: 100%; }
 }
 
  #menuchec[type="checkbox"]:checked ~ #bkmenu{
-    width: 100vw;
-    height: 100%;
+    width: 1400px;
+    height: 650px;
     background-image: url("../Imagens/cenario.png");
     background-repeat: no-repeat;
     background-size: cover;
-    position: absolute; 
-    top: 0; 
+    position: absolute;
+    
+   
 }
 
 
@@ -196,6 +202,10 @@ body{width: 100%; height: 100%; }
     animation: bullet 1.500s ease;
 }
 
+#olog{
+    position: absolute;
+    left:15px;
+}
 
 
 
